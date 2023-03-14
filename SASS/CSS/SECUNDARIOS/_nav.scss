@@ -12,20 +12,6 @@ $background-color_2: rgba(0, 0, 0, 0.856);
 	position: fixed;
 	transition: all 0.8s ease;
 	z-index: 123;
-	.logo_colapse {
-		img {
-			display: none;
-			width: 70px;
-			cursor: pointer;
-			position: relative;
-		}
-	}
-	.logo {
-		img {
-			width: 70px;
-			cursor: pointer;
-		}
-	}
 	nav {
 		flex: 1;
 		ul {
@@ -56,6 +42,20 @@ $background-color_2: rgba(0, 0, 0, 0.856);
 	}
 	.icono-menu {
 		display: none;
+	}
+}
+.logo_colapse {
+	img {
+		display: none;
+		width: 70px;
+		cursor: pointer;
+		position: relative;
+	}
+}
+.logo {
+	img {
+		width: 70px;
+		cursor: pointer;
 	}
 }
 .nav.active {
