@@ -144,14 +144,6 @@ header:hover{
   display: none;
 }
 
-header {
-  background-image: url(../../IMAGENES/primera_imagen.png);
-  height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  transition: 1s;
-}
 header .contenido {
   padding-top: 30vh;
   height: 100vh;
