@@ -3,84 +3,163 @@ $color_2: black;
 $background-color_1: transparent;
 $background-color_2: rgba(0, 0, 0, 0.856);
 
-.nav {
+
+
+.nav.active nav ul li a:hover{
+	color:black;
+	background-color: rgba(0, 0, 0, 0.856);
+}
+header{
+	background-image:url(../../IMAGENES/primera_imagen.png);
+	height: 100vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	transition: 1s;
+}
+.nav{
 	width: 100%;
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
-	padding: 20px;
+	padding:20px;
 	position: fixed;
 	transition: all 0.8s ease;
 	z-index: 123;
-	nav {
-		flex: 1;
-		ul {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 2vw;
-			li {
-				list-style: none;
-				margin: 10px;
-				a {
-					text-decoration: none;
-					text-align: center;
-					color: $color_1;
-					transition: all 0.3s ease;
-					font-size: 15px;
-					font-weight: 400;
-					letter-spacing: 1.2px;
-					&:hover {
-						padding: 10px 15px;
-						background: #ffffffd7;
-						color: $color_2;
-						border-radius: 20px;
-					}
-				}
-			}
-		}
-	}
-	.icono-menu {
-		display: none;
-	}
 }
-.logo_colapse {
-	img {
-		display: none;
-		width: 70px;
-		cursor: pointer;
-		position: relative;
-	}
+.logo_colapse img{
+	display: none;
+	width: 70px;
+	cursor: pointer;
+	position:relative;
 }
-.logo {
-	img {
-		width: 70px;
-		cursor: pointer;
-	}
+.nav.active{
+	background-color: rgba(0, 0, 0, 0.726);
+	padding:10px;
 }
-.nav.active {
-	background-color: $background-color_1;
-	padding: 10px;
-	a {
-		img {
-			width: 65px;
-		}
-	}
-	nav {
-		ul {
-			li {
-				a {
-					color: $color_1;
-					font-weight: 400;
-					font-size: 15px;
-					&:hover {
-						color: $color_2;
-						background-color: $background-color_2;
-						color: $color_1;
-						background-color: $background-color_2;
-					}
-				}
-			}
-		}
-	}
+.nav.active a img{
+	width: 65px;
 }
+.nav.active nav ul li a{
+	color:white;
+	font-weight: 400;
+	font-size: 15px;
+}
+.nav.active nav ul li a:hover{
+	color:white;
+	background-color: rgba(0, 0, 0, 0.856);
+}
+.logo img{
+	width: 70px;
+	cursor: pointer;
+}
+.nav nav{
+	flex: 1;
+}
+.nav nav ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:2vw;
+}
+.nav nav ul li{
+	list-style: none;
+	margin:10px;
+}
+.nav nav ul li a{
+	text-decoration: none;
+	text-align: center;
+	color:white;
+	transition: all 0.3s ease;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 1.2px;
+}
+.nav nav ul li a:hover{
+	padding:10px 15px;
+	background: #ffffffd7;
+	color:black;
+	border-radius: 20px;
+}
+
+// .nav {
+// 	width: 100%;
+// 	align-items: center;
+// 	display: flex;
+// 	justify-content: space-between;
+// 	padding: 20px;
+// 	position: fixed;
+// 	transition: all 0.8s ease;
+// 	z-index: 123;
+// 	nav {
+// 		flex: 1;
+// 		ul {
+// 			display: flex;
+// 			align-items: center;
+// 			justify-content: center;
+// 			gap: 2vw;
+// 			li {
+// 				list-style: none;
+// 				margin: 10px;
+// 				a {
+// 					text-decoration: none;
+// 					text-align: center;
+// 					color: $color_1;
+// 					transition: all 0.3s ease;
+// 					font-size: 15px;
+// 					font-weight: 400;
+// 					letter-spacing: 1.2px;
+// 					&:hover {
+// 						padding: 10px 15px;
+// 						background: #ffffffd7;
+// 						color: $color_2;
+// 						border-radius: 20px;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.icono-menu {
+// 		display: none;
+// 	}
+// }
+// .logo_colapse {
+// 	img {
+// 		display: none;
+// 		width: 70px;
+// 		cursor: pointer;
+// 		position: relative;
+// 	}
+// }
+// .logo {
+// 	img {
+// 		width: 70px;
+// 		cursor: pointer;
+// 	}
+// }
+// .nav.active {
+// 	background-color: $background-color_1;
+// 	padding: 10px;
+// 	a {
+// 		img {
+// 			width: 65px;
+// 		}
+// 	}
+// 	nav {
+// 		ul {
+// 			li {
+// 				a {
+// 					color: $color_1;
+// 					font-weight: 400;
+// 					font-size: 15px;
+// 					&:hover {
+// 						color: $color_2;
+// 						background-color: $background-color_2;
+// 						color: $color_1;
+// 						background-color: $background-color_2;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
