@@ -1,0 +1,81 @@
+$color_1: rgb(255, 237, 72);
+$font-family_1: 'Lora', serif;
+
+/* LINEA DE TIEMPO ESTILOS */
+.historiaLinea {
+	margin: 60px;
+	padding-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	.titulo {
+		h1 {
+			color: $color_1;
+			font-family: $font-family_1;
+			font-size: 45px;
+			padding-bottom: 30px;
+		}
+	}
+}
+.lineaDeTiempo {
+	margin-top: 35px;
+	padding: 15px;
+	display: grid;
+	grid-template-columns: 40% auto;
+	justify-content: center;
+	ul {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		padding: 0;
+		li {
+			margin-top: 30px;
+			position: relative;
+			padding: 25px;
+			p {
+				padding: 0 20px;
+				transition: 1.5s;
+				font-size: 14px;
+				font-weight: 300;
+			}
+			.fecha {
+				position: absolute;
+				top: 30px;
+				left: -50px;
+				opacity: 0;
+				transition: 1.5s;
+				font-size: 12px;
+			}
+			.lineaDeTiempo_punto {
+				border: none;
+				position: absolute;
+				border-radius: 50%;
+				background: rgb(228, 228, 228);
+				width: 8px;
+				height: 8px;
+				top: 30px;
+				left: -6px;
+				transition: 1.5s ease;
+			}
+		}
+	}
+	.lineaDeTiempo_linea {
+		background: rgb(228, 228, 228);
+		width: 4px;
+		border-radius: 12px;
+		position: relative;
+		justify-self: end;
+		.lineaDeTiempo_lineaInterior {
+			position: absolute;
+			background: rgb(251, 235, 128);
+			width: 4px;
+			height: 0%;
+			top: 0%;
+			left: 0%;
+			transition: 1s linear;
+		}
+	}
+}

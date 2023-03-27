@@ -1,0 +1,40 @@
+$color_1: white;
+$font-family_1: 'Gold Night', sans-serif;
+
+.lema {
+	background-image: url(../../IMAGENES/NOSOTROS/portada_500_tape.png);
+	height: 78vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	transition: 1s;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: left;
+	filter: grayscale(100);
+	transform: translateY(-100px);
+	&:hover {
+		filter: none;
+		transform: translateY(-20px);
+		margin-bottom: 100px;
+	}
+	h1 {
+		font-family: $font-family_1;
+		color: $color_1;
+		padding-top: 80px;
+		padding-left: 300px;
+		width: 55vw;
+		transform: translateY(100px);
+		font-weight: 300;
+		font-size: 55px;
+		text-align: center;
+		letter-spacing: 3px;
+		line-height: 50px;
+		transition: .5s;
+		&:hover {
+			letter-spacing: 5px;
+			width: 58vw;
+			padding-left: 280px;
+		}
+	}
+}

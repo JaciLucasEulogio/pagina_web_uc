@@ -1,0 +1,141 @@
+$color_1: white;
+$color_2: rgba(255, 255, 255, 0.336);
+$font-family_1: 'Lora', serif;
+$background-color_1: black;
+$background-color_2: rgba(0, 0, 0, 0.788);
+$background-color_3: rgba(0, 0, 0, 0.288);
+$background-color_4: transparent;
+$border-color_1: white;
+
+.form {
+	background-color: $background-color_1;
+	padding-top: 60px;
+	padding-bottom: 90px;
+	height: 100%;
+	display: flex;
+	gap: 40px;
+	align-items: center;
+	img {
+		width: 40vw;
+		height: 100%;
+		padding-left: 80px;
+	}
+	.formulario {
+		display: flex;
+		flex-direction: column;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: left;
+		align-content: center;
+		.texto {
+			display: flex;
+			flex-direction: column;
+			flex-flow: row wrap;
+			justify-content: left;
+			align-items: center;
+			padding-right: 70px;
+			padding-bottom: 20px;
+			h1 {
+				color: $color_1;
+				font-family: $font-family_1;
+				font-weight: 400;
+				font-size: 70px;
+				padding-left: 0;
+			}
+			h4 {
+				color: $color_1;
+				font-weight: 300;
+				font-size: 25px;
+				padding-left: 0;
+			}
+		}
+		.preguntas {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: left;
+			.nombre {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				padding: 15px;
+				label {
+					color: $color_2;
+					font-size: 17px;
+					padding-bottom: 10px;
+				}
+				input {
+					background-color: $background-color_2;
+					width: 45vw;
+					height: 35px;
+					border-radius: 0;
+					border-color: $border-color_1;
+					padding-top: 7px;
+					padding-bottom: 7px;
+					padding-left: 20px;
+					color: $color_1;
+				}
+			}
+			.correo {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				padding: 15px;
+				label {
+					color: $color_2;
+					font-size: 17px;
+					padding-bottom: 10px;
+				}
+				input {
+					background-color: $background-color_2;
+					height: 35px;
+					border-radius: 0;
+					border-color: $border-color_1;
+					padding-top: 7px;
+					padding-bottom: 7px;
+					padding-left: 20px;
+					color: $color_1;
+				}
+				.area {
+					background-color: $background-color_3;
+					height: 35px;
+					border-radius: 0;
+					border-color: $border-color_1;
+					padding-top: 7px;
+					padding-bottom: 7px;
+					padding-left: 20px;
+				}
+			}
+			.mensaje {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				padding: 15px;
+				label {
+					color: $color_2;
+					font-size: 17px;
+					padding-bottom: 10px;
+				}
+				textarea{
+					padding: 5px;
+					padding-left:10px !important;
+				}
+			}
+		}
+		.botones {
+			width: 40vw;
+			display: flex;
+			gap: 20px;
+			padding-left: 10px;
+			padding-top: 10px;
+			button {
+				width: 130px;
+				height: 40px;
+				border-radius: 20px;
+				background-color: $background-color_4;
+				border-color: $border-color_1;
+				color: $color_1;
+			}
+		}
+	}
+}
