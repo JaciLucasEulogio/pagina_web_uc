@@ -38,6 +38,7 @@
 }
 .no_index .nav nav ul li a {
   color: white;
+  font-size: 1vw;
 }
 .no_index .nav nav ul li a:hover {
   padding: 10px 15px;
@@ -54,7 +55,10 @@
 .no_index .nav.active nav ul li a {
   color: white;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1vw;
+}
+.index .nav nav ul li a{
+  font-size: 1vw;
 }
 
 .nav.active nav ul li a:hover {
@@ -90,18 +94,18 @@ header {
 }
 
 .nav.active {
-  background-color: rgba(0, 0, 0, 0.726);
+  background-color: rgba(0, 0, 0, 0.664);
   padding: 10px;
 }
 
 .nav.active a img {
-  width: 65px;
+  width: 3.1vw;
 }
 
 .nav.active nav ul li a {
   color: white;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1vw;
 }
 
 .nav.active nav ul li a:hover {
@@ -110,7 +114,7 @@ header {
 }
 
 .logo img {
-  width: 70px;
+  width: 3.3vw;
   cursor: pointer;
 }
 
@@ -156,7 +160,7 @@ header .contenido {
   background-color: rgba(0, 0, 0, 0.61);
 }
 header .contenido a {
-  font-size: 16px;
+  font-size: 1vw;
   text-decoration: none;
   color: black;
   background-color: rgb(255, 240, 104);
@@ -170,7 +174,7 @@ header .contenido a:hover {
 }
 header .contenido h1 {
   color: rgb(255, 240, 104);
-  font-size: 90px;
+  font-size: 9vw;
   font-weight: 900;
   font-family: "Lora", serif;
   letter-spacing: 3px;
@@ -178,7 +182,7 @@ header .contenido h1 {
 }
 header .contenido h4 {
   color: white;
-  font-size: 30px;
+  font-size: 2.4vw;
   font-weight: 1000;
   font-family: "Interstate", sans-serif;
   letter-spacing: 2px;
@@ -186,18 +190,10 @@ header .contenido h4 {
 }
 header .contenido p {
   color: rgb(255, 240, 104);
-  font-size: 20px;
-  padding-top: 70px;
+  font-size: 1.5vw;
+  padding-top: 30px;
 }
-header .contenido .icono_flecha {
-  font-size: calc(3em + 1vw);
-  color: white;
-  padding: 0;
-  transition: all 1s ease;
-}
-header .contenido .icono_flecha:hover {
-  transform: rotateZ(180deg);
-}
+
 header::before {
   content: "";
   position: absolute;
@@ -230,7 +226,7 @@ header::before {
 .firstcontent .text h1 {
   color: rgb(250, 232, 66);
   size: 100px;
-  font-size: 90px;
+  font-size: 8.7vw;
   font-weight: 900;
   font-family: "Lora", serif;
   padding-bottom: 20px;
@@ -241,13 +237,13 @@ header::before {
   justify-content: end;
 }
 .firstcontent .text h1:hover {
-  font-size: 100px;
+  font-size: 9vw;
   color: rgb(201, 198, 198);
 }
 .firstcontent .text h3 {
   color: floralwhite;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 2.5vw;
   padding-bottom: 10px;
   width: 100%;
   transition: 0.5s;
@@ -257,7 +253,7 @@ header::before {
 .firstcontent .text p {
   color: beige;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 1.2vw;
   transition: 0.5s;
   display: flex;
   justify-content: flex-end !important;
@@ -278,13 +274,16 @@ header::before {
 .carrusel .carousel:hover {
   filter: none;
 }
+.carrusel .carousel .carousel-indicators{
+  top: 37vw;
+}
 .carrusel .carousel h5 {
   font-family: "Lora", serif;
-  font-size: 35px;
+  font-size: 3vw;
   font-weight: 800;
 }
 .carrusel .carousel p {
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 400;
 }
 
@@ -309,7 +308,7 @@ footer .redes {
   padding-bottom: 5px;
 }
 footer .redes ion-icon {
-  font-size: 20px;
+  font-size: 1.8vw;
   color: darkgrey;
   cursor: pointer;
 }
@@ -328,11 +327,11 @@ footer ul {
 footer ul li a {
   text-decoration: none;
   color: darkgrey;
-  font-size: 12px;
+  font-size: 1vw;
 }
 footer p {
   color: darkgrey;
-  font-size: 12px;
+  font-size: 1vw;
   text-align: center;
   margin: 0.1px;
 }
@@ -378,8 +377,7 @@ footer p {
 .fotos .caja_img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   filter: grayscale(100);
   transition: 1s ease;
 }
@@ -464,13 +462,13 @@ footer p {
   color: white;
   font-family: "Lora", serif;
   font-weight: 400;
-  font-size: 70px;
+  font-size: 5.4vw;
   padding-left: 0;
 }
 .form .formulario .texto h4 {
   color: white;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 1.8vw;
   padding-left: 0;
 }
 .form .formulario .preguntas {
@@ -487,7 +485,7 @@ footer p {
 }
 .form .formulario .preguntas .nombre label {
   color: rgba(255, 255, 255, 0.336);
-  font-size: 17px;
+  font-size: 1.3vw;
   padding-bottom: 10px;
 }
 .form .formulario .preguntas .nombre input {
@@ -496,8 +494,9 @@ footer p {
   height: 35px;
   border-radius: 0;
   border-color: white;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 1vw;
+  padding-bottom:1vw;
+  font-size: 1.3vw;
   padding-left: 20px;
   color: white;
 }
@@ -509,16 +508,17 @@ footer p {
 }
 .form .formulario .preguntas .correo label {
   color: rgba(255, 255, 255, 0.336);
-  font-size: 17px;
+  font-size: 1.3vw;
   padding-bottom: 10px;
 }
 .form .formulario .preguntas .correo input {
   background-color: rgba(0, 0, 0, 0.788);
   height: 35px;
+  font-size: 1.3vw;
   border-radius: 0;
   border-color: white;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 1vw;
+  padding-bottom:1vw;
   padding-left: 20px;
   color: white;
 }
@@ -539,11 +539,12 @@ footer p {
 }
 .form .formulario .preguntas .mensaje label {
   color: rgba(255, 255, 255, 0.336);
-  font-size: 17px;
+  font-size: 1.3vw;
   padding-bottom: 10px;
 }
 .form .formulario .preguntas .mensaje textarea {
   padding: 5px;
+  font-size: 1.3vw;
   padding-left: 10px !important;
 }
 .form .formulario .botones {
@@ -554,8 +555,9 @@ footer p {
   padding-top: 10px;
 }
 .form .formulario .botones button {
-  width: 130px;
-  height: 40px;
+  width: 10vw;
+  height: 2vw;
+  font-size: 1.3vw;
   border-radius: 20px;
   background-color: transparent;
   border-color: white;
@@ -574,22 +576,21 @@ footer p {
   transition: 1s;
 }
 .testimonios h2 {
-  font-size: 30px;
+  font-size: 2.6vw;
   color: white;
   margin-bottom: 80px;
   position: relative;
 }
 .testimonios h2::after {
   content: "";
-  width: 150px;
-  height: 3px;
+  width: 15vw;
+  height: 0.2vw;
   background: linear-gradient(to right, #f5e839, #9bdd45);
   position: absolute;
   bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
 }
-
 .carousel {
   padding: 0 70px;
 }
@@ -601,8 +602,8 @@ footer p {
   min-height: 290px;
 }
 .carousel .carousel-item .img-box {
-  width: 135px;
-  height: 135px;
+  width: 9vw;
+  height: 9vw;
   margin: 0 auto;
   padding: 5px;
   border: 1px solid #ddd;
@@ -618,9 +619,11 @@ footer p {
   padding: 30px 0 10px;
   color: white;
   font-weight: 300;
+  font-size: 1vw;
 }
 .carousel .overview {
   font-style: italic;
+  font-size: 1vw;
 }
 .carousel .overview b {
   text-transform: uppercase;
@@ -651,7 +654,7 @@ footer p {
   text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
 }
 .slide .carousel-indicators {
-  top: 320px;
+  top: 20vw;
 }
 .slide .carousel-indicators li {
   width: 12px;
@@ -721,19 +724,19 @@ footer p {
 .definicion .contenido .texto {
   display: flex;
   flex-direction: column;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   width: 30vw;
 }
 .definicion .contenido .texto h2 {
   color: white;
   font-family: "Lora", serif;
-  font-size: 45px;
+  font-size: 4vw;
   padding-bottom: 60px;
 }
 .definicion .contenido .texto p {
   color: #bbbbbb;
-  font-size: 13.5px;
-  width: 300px;
+  font-size: 1vw;
+  width: 30vw;
 }
 .definicion .contenido .texto .keywords {
   display: flex;
@@ -745,12 +748,12 @@ footer p {
   color: white;
   padding: 5px 6px;
   border: 1px solid white;
-  font-size: 13px;
+  font-size: 1vw;
   font-weight: 200;
   transition: 0.5s;
 }
 .definicion .contenido .texto .keywords h4:hover {
-  font-size: 15px;
+  font-size: 1.1vw;
   color: black;
   background-color: white;
 }
@@ -784,10 +787,10 @@ footer p {
   width: 55vw;
   transform: translateY(100px);
   font-weight: 300;
-  font-size: 55px;
+  font-size: 5vw;
   text-align: center;
   letter-spacing: 3px;
-  line-height: 50px;
+  line-height: 5vw;
   transition: 0.5s;
 }
 .lema h1:hover {
@@ -823,12 +826,12 @@ footer p {
 .nosotros .texto h1 {
   color: rgb(251, 235, 128);
   font-family: "Lora", serif;
-  font-size: 55px;
+  font-size: 5vw;
   padding-bottom: 20px;
 }
 .nosotros .texto p {
   text-align: center;
-  font-size: 15px;
+  font-size: 1.2vw;
   font-weight: 300;
   color: #555;
 }
@@ -844,7 +847,7 @@ footer p {
 .historiaLinea .titulo h1 {
   color: rgb(255, 237, 72);
   font-family: "Lora", serif;
-  font-size: 45px;
+  font-size: 4vw;
   padding-bottom: 30px;
 }
 
@@ -872,7 +875,7 @@ footer p {
 .lineaDeTiempo ul li p {
   padding: 0 20px;
   transition: 1.5s;
-  font-size: 14px;
+  font-size: 1.1vw;
   font-weight: 300;
 }
 .lineaDeTiempo ul li .fecha {
@@ -881,7 +884,7 @@ footer p {
   left: -50px;
   opacity: 0;
   transition: 1.5s;
-  font-size: 12px;
+  font-size: 1vw !important;
 }
 .lineaDeTiempo ul li .lineaDeTiempo_punto {
   border: none;
@@ -912,6 +915,24 @@ footer p {
 }
 
 @media (max-width: 1024px) {
+  .no_index .nav nav ul li a {
+    font-size: 13px;
+  }
+  .no_index .nav.active nav ul li a {
+    font-size: 13px;
+  }
+  .index .nav nav ul li a{
+    font-size: 13px;
+  } 
+  .nav.active nav ul li a {
+    font-size: 13px;
+  }
+  header .contenido a {
+    font-size: 16px;
+  }
+  header .contenido p {
+    font-size: 15px;
+  }
   .firstcontent .imagen img {
     width: 40vw;
   }
@@ -931,6 +952,18 @@ footer p {
     font-size: 15px;
     margin: 0;
   }
+  footer .redes ion-icon {
+    font-size: 20px;
+  }
+  footer ul li a {
+    font-size: 12px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  .carrusel .carousel .carousel-indicators{
+    top: 30vw;
+  }
   .form {
     align-items: center;
   }
@@ -942,6 +975,71 @@ footer p {
   }
   .form .formulario .preguntas .mensaje .area {
     width: 45vw;
+  }
+
+  .form .formulario .texto h1 {
+    font-size: 70px;
+  }
+  .form .formulario .texto h4 {
+    font-size: 25px;
+  }
+  .form .formulario .preguntas .nombre label {
+    font-size: 17px;
+  }
+  .form .formulario .preguntas .nombre input {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .form .formulario .preguntas .correo label {
+    font-size: 17px;
+  }
+  .form .formulario .preguntas .correo input {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .form .formulario .preguntas .mensaje label {
+    font-size: 17px;
+  }
+  .form .formulario .preguntas .mensaje textarea {
+    font-size: 17px;
+  }
+  .form .formulario .botones button {
+    width: 130px;
+    height: 40px;
+    font-size: 17px; 
+  }
+  .testimonios h2 {
+    font-size: 30px;
+  }
+  .testimonios h2::after {
+    width: 150px;
+    height: 3px;
+  }
+  .carousel .carousel-item .img-box {
+    width: 135px;
+    height: 135px;
+  }
+  .carousel .testimonial {
+    font-size: 13px;
+  }
+  .carousel .overview {
+    font-size: 13px;
+  }
+  .slide .carousel-indicators {
+    top: 320px; 
+  }
+  .definicion .contenido .texto h2 {
+    font-size: 45px;
+  }
+  .definicion .contenido .texto p {
+    font-size: 13.5px;
+    width: 300px;
+  }
+  .definicion .contenido .texto .keywords h4 {
+    font-size: 13px; 
+  }
+  .definicion .contenido .texto .keywords h4:hover {
+    font-size: 15px; 
   }
   .lema h1 {
     width: 60vw;
@@ -961,8 +1059,30 @@ footer p {
   .nosotros .texto {
     width: 43vw;
   }
+  .lema h1 {
+    font-size: 55px;
+    line-height: 50px;
+  }
+  .nosotros .texto h1 {
+    font-size: 55px; 
+  }
+  .nosotros .texto p {
+    font-size: 15px;
+  }
+  .historiaLinea .titulo h1 {
+    font-size: 45px; 
+  }
+  .lineaDeTiempo ul li p {
+    font-size: 14px;
+  }
+  .lineaDeTiempo ul li .fecha {
+    font-size: 12px !important;
+  }
 }
 @media (max-width: 1020px) {
+  header .contenido a {
+    font-size: 16px;
+  }
   .fotos {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
@@ -1142,6 +1262,10 @@ footer p {
   .definicion .contenido {
     gap: 30px;
   }
+  .definicion .contenido .texto .keywords h4 {
+    font-size: 13px; 
+    height: 26px;
+  }
   .lema h1 {
     padding-left: 20px;
     padding-top: 40px;
@@ -1250,8 +1374,8 @@ footer p {
     flex-direction: column;
   }
   .form img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
+    object-fit: cover;
     width: 90vw;
     height: 90vw;
   }
@@ -1494,4 +1618,4 @@ footer p {
   footer ul li:nth-child(6) {
     transform: translateY(-10px);
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
